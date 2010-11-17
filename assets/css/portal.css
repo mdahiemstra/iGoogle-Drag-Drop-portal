@@ -1,0 +1,89 @@
+#columns .column{
+
+	margin: 0 5px 0 5px;
+	
+	min-height: 200px; /* set a min-height to ensure a target dropzone */
+}
+
+#columns .menu{
+	
+	width: 200px;
+	
+	float: left;
+}
+
+#columns .blocks{
+	
+	width: 400px;
+	
+	float: left;
+}
+
+#columns .sidebar{
+	
+	width: 180px;
+	
+	float: left;
+}
+
+.block .draghandle{
+	cursor: move;
+}
+
+/* all columns */
+#columns .menu div, #columns .blocks div, #columns .sidebar div{
+	
+	background-color: white;
+	
+	border: 1px solid #ccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	margin-bottom: 20px;
+}
+
+#columns .menu div h1, #columns .blocks div h1, #columns .sidebar div h1{
+	
+	font-size: 12px;
+	
+	padding: 7px;
+	
+	background-color: #e0e0e0;
+}
+
+#columns .menu div p, #columns .blocks div p, #columns .sidebar div p{
+	
+	font-size: 11px;
+	
+	padding: 7px;
+}
+
+#columns .menu, #columns .blocks, #columns .sidebar{
+	
+	border: 2px solid #F3F3F3;
+	
+	padding: 3px;
+}
+
+#columns .target {
+	
+	padding: 3px;
+	
+	border: 2px dashed #ccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/* column specific styles */
+#columns .menu div h1{
+
+	background-color: #ccc;
+}
+
+#columns .sidebar div h1{
+
+	background-color: #e6e6e6;
+}

@@ -1,0 +1,107 @@
+/* reset some stuff */
+h1,h2,hr,ul,ins{margin:0px;padding:0px;border: 0px;text-decoration:none;}
+
+html { overflow-y: scroll; }
+
+/* body stuff */
+body {
+	
+	background-image: url(../img/shadow.png);
+	background-color: #F3F3F3;
+	background-repeat: repeat-x;
+	font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,Verdana,Sans-Serif;
+	color: #333;
+	cursor: default;
+}
+
+/* set some wrapper values */
+#wrapper{
+	width: 840px;
+	margin: 0 auto 0 auto;
+}
+
+/* stuff */
+#headnote{
+	width: 700px;
+	padding: 60px 0px 60px 0px;
+	float: left;
+}
+
+/* set a nice big heading */
+#headnote h1{
+	color: #444;
+	font-size: 36px;
+	font-weight: 100;
+}
+
+/* a little smaller text */
+#headnote h2{
+	font-size: 18px;
+	font-weight: 100;
+	margin-top: -5px;
+	color: #9F14AC;
+}
+
+/* a nice little line */
+hr {
+	background: transparent url(../img/divider.png) no-repeat;
+	margin: 0px -15px 50px -15px;
+	height: 2px;
+}
+
+
+#debug{
+	background-color: white;
+	
+	border: 1px solid #ccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#debug h1{
+	font-size: 12px;
+	
+	padding: 7px;
+	
+	background-color: #e0e0e0;
+}
+
+#debug p{
+	font-size: 11px;
+	
+	padding: 7px;
+}
+
+#licence{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	
+	float: left;
+}
+
+#donate {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	
+	float: right;
+	
+	font-size: 11px;
+	color: #999;
+}
+
+#donate a{
+	color: #999;
+}
+
+#browser-support{
+	margin-top:40px;
+	font-size: 11px;
+	color: #999;
+}
+
+#heading{
+	background-image: url(../img/heading.png);
+	width: 640px;
+	height: 82px;
+}
