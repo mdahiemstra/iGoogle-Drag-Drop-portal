@@ -1,9 +1,9 @@
-// jsportal (iGoogle-like drag&drop portal v2.0, Mon Sep 14 09:00:00 +0100 2008
+// jsportal (iGoogle-like drag&drop portal v3, Thu Nov 18 09:00:00 +0100 2010
 
-// Copyright (c) 2009 Michel Hiemstra (http://michelhiemstra.nl)
+// Copyright (c) 2010 Michel Hiemstra (http://michelhiemstra.nl)
 
-// jsportal v2.0 is freely distributable under the terms of an Creative Commons license.
-// For details, see the authors web site: http://michelhiemstra/
+// jsportal v3.0 is freely distributable under the terms of an Creative Commons license.
+// For details, see the authors web site: http://michelhiemstra.nl/
 
 if(typeof(Prototype) == "undefined")
 	throw "Portal requires Prototype to be loaded.";
@@ -25,7 +25,7 @@ Portal.prototype = {
 		this.apply_settings(settings);
 		
 		// load data to blocks
-		//this.loadData(data);
+		//this.loadData(data); /* deceperated */
 						
 		// if editor is enabled we proceed
 		if (!this.options.editorEnabled) return;
@@ -65,6 +65,7 @@ Portal.prototype = {
 					
 					// save it to the database
 					new Ajax.Request(this.options.saveurl, { method: 'post', postBody: postBody, onComplete : function (t) {
+						// put it to the debugging window
 						$('data').update(t.responseText + $('data').innerHTML);
 					} });
 										
@@ -118,7 +119,7 @@ Portal.prototype = {
 					switch (type) {
 						
 						default:
-							new Ajax.Updater(blockname + '-content', '/module/'+type+'/data='+block[blockname], { evalScripts : true });
+							/* ajax request here to fetch data for block */
 					}
 				}
 			}.bind(this));

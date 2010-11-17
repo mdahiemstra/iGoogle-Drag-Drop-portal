@@ -1,24 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>iGoogle like Drag & Drop Portal v2.0 by Michel Hiemstra</title>
+		<title>iGoogle like Drag & Drop Portal v3 by Michel Hiemstra</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Michel Hiemstra (mhiemstra@php.net)" />
 		<meta name="keywords" content="drag&drop portal, igoogle drag and drop, igoogle, drag and drop div igoogle javascript, drag and drop block like igoogle, div drag drop" />
-		<meta name="description" content="iGoogle like Drag & Drop Portal v2.0 by Michel Hiemstra" />
+		<meta name="description" content="iGoogle like Drag & Drop Portal v3 by Michel Hiemstra" />
 		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1/prototype.js"></script>
-		<script type="text/javascript" src="assets/js/scriptaculous.js"></script>
-		<script type="text/javascript" src="assets/js/portal.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js"></script>
+		<script type="text/javascript" src="js/portal.js"></script>
 		
-		<? require_once 'get_blocks.php'; ?>
+		<? require_once 'blocks_get.php'; ?>
 		
 		<script type="text/javascript">
-			var settings 	= {<?=getBlocks()?>};
+			var settings 	= <?=getBlocks()?>;
 			
 			var options 	= { portal 			: 'columns', 
 								editorEnabled 	: true, 
-								saveurl 		: 'save.php' };
+								saveurl 		: 'blocks_save.php' };
+								
 			var data 		= {};
 						
 			var portal;
@@ -28,16 +29,14 @@
 			});
 		</script>
 		
-		<link rel="stylesheet" href="assets/css/style.css"  type="text/css" media="screen" />
-		<link rel="stylesheet" href="assets/css/portal.css"  type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css"  type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/portal.css"  type="text/css" media="screen" />
 	</head>
 	<body>
 	
 		<div id="wrapper">
-			<div id="heading"></div>
-			
 			<div id="headnote">
-					<h1>iGoogle-like Drag &amp; Drop Portal v2.0</h1>
+					<h1>iGoogle-like Drag &amp; Drop Portal v3</h1>
 	
 					<h2>based on prototype and scriptaculous. By <a href="http://michelhiemstra.nl/" target="_blank">Michel Hiemstra</a>.</h2>
 			</div>
@@ -46,6 +45,8 @@
 
 			<hr />
 			
+			<!-- This is the part you want -->
+			
 			<div id="columns">
 				
 				<div id="column-1" class="column menu"></div>
@@ -53,6 +54,7 @@
 				<div id="column-2" class="column blocks"></div>
 				
 				<div id="column-3" class="column sidebar"></div>
+				
 				
 				<div class="portal-column" id="portal-column-block-list" style="display: none;">
 					<div class="block" id="block-1">
@@ -78,11 +80,13 @@
 				
 			</div>
 			
+			<!-- Above is the part you want -->
+			
 			<div style="clear:both;"></div>
 			
 			<hr style="margin-top: 40px;" />
 			
-			<div id="debug">
+			<div class="box">
 				
 				<h1>Debug information (no actual saving will be done in the demo):</h1>
 				
@@ -90,22 +94,20 @@
 				
 			</div>
 			
-			<div style="clear:both;"></div>
+			<div style="clear:both; margin-bottom: 10px;"></div>
 			
-			<hr style="margin-top: 40px;" />
-			
-			<div id="debug">
+			<div class="box">
 				
 				<h1>Download</h1>
 				
-				<p>Click <a href="http://michelhiemstra.nl/scripts/jsportal/jsportal-v2.0.tar.gz">here</a> to download the source code</p>
+				<p>The source is <a href="https://github.com/mdahiemstra/iGoogle-Drag-Drop-portal" target="_blank">available</a> on github.com</p>
 				
 			</div>
 			
 			<div style="clear:both;"></div>	
 			
 			<div id="browser-support">
-				Supported browsers: Just about all of them: IE6, IE7, IE8, FireFox, Safari, Chrome, Opera and more.
+				Supported browsers: Just about all of them.
 			</div>
 			
 			<div style="clear:both;"></div>	
@@ -123,15 +125,15 @@
 			</div>
 		</div>
 		
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8526455-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-8526455-1");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
 		
 	</body>
 </html>

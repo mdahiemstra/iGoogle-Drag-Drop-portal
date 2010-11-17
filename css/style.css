@@ -5,8 +5,6 @@ html { overflow-y: scroll; }
 
 /* body stuff */
 body {
-	
-	background-image: url(../img/shadow.png);
 	background-color: #F3F3F3;
 	background-repeat: repeat-x;
 	font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,Verdana,Sans-Serif;
@@ -44,13 +42,12 @@ body {
 
 /* a nice little line */
 hr {
-	background: transparent url(../img/divider.png) no-repeat;
 	margin: 0px -15px 50px -15px;
 	height: 2px;
 }
 
 
-#debug{
+.box{
 	background-color: white;
 	
 	border: 1px solid #ccc;
@@ -59,7 +56,7 @@ hr {
 	-webkit-border-radius: 5px;
 }
 
-#debug h1{
+.box h1{
 	font-size: 12px;
 	
 	padding: 7px;
@@ -67,7 +64,7 @@ hr {
 	background-color: #e0e0e0;
 }
 
-#debug p{
+.box p{
 	font-size: 11px;
 	
 	padding: 7px;
@@ -98,10 +95,4 @@ hr {
 	margin-top:40px;
 	font-size: 11px;
 	color: #999;
-}
-
-#heading{
-	background-image: url(../img/heading.png);
-	width: 640px;
-	height: 82px;
 }
