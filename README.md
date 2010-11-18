@@ -5,8 +5,8 @@ The refreshed and tuned version, stay tuned for progress or contribute!
 
 Demo
 ----
-The demo is updated frequiently.
-[Click here to show demo][2]
+The demo is updated frequently.
+[Take me to the demo][2]
 
 Usage
 -----
