@@ -3,6 +3,11 @@ iGoogle-like Drag & Drop Portal version 3
 
 The refreshed and tuned version, stay tuned for progress or contribute!
 
+Demo
+----
+The demo is updated frequiently.
+[Click here to show demo][2]
+
 Usage
 -----
 
@@ -20,3 +25,4 @@ Contributing
 
 
 [1]: https://github.com/mdahiemstra/iGoogle-Drag-Drop-portal/issues
+[2]: http://michelhiemstra.nl/scripts/portal-v3/
