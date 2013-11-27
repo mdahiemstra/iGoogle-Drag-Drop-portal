@@ -1,7 +1,10 @@
 iGoogle-like Drag & Drop Portal version 3
 =========================================
 
-The refreshed and tuned version, stay tuned for progress or contribute!
+Update 27 Nov 2013
+Development has been discontinued for this project, there are loads of alternatives out there for you to find ;)
+
+
 
 Demo
 ----
