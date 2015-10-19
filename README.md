@@ -1,3 +1,8 @@
+Edit 19-10-2015
+===============
+You should not use this anymore, it's ancient. There is better code to find out there.
+
+
 iGoogle-like Drag & Drop Portal version 3
 =========================================
 
